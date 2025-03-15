@@ -282,12 +282,9 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @misc{cifar10-attention-classification,
-  author = {Your Name},
+  author = {Pratham Saraf, Krish Murjani and Krapa Karthik},
   title = {Enhanced CIFAR-10 Image Classification with Attention Mechanisms},
-  year = {2025},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/yourusername/cifar10-classification}}
+  year = {2025}
 }
 ```
 
@@ -297,6 +294,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- This project was developed as part of [course/competition name]
+- This project was developed as part of Deep Learning CS 6953 Course.
 - The attention mechanism implementation is inspired by [Wang et al.](https://arxiv.org/abs/1807.06521) (CBAM: Convolutional Block Attention Module)
 - CIFAR-10 dataset by [Krizhevsky et al.](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf)
