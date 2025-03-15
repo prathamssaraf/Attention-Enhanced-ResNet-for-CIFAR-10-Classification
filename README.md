@@ -29,7 +29,7 @@ The model architecture is designed to be parameter-efficient while maintaining h
 ## Results
 
 - **Validation Accuracy**: 95.30%
-- **Model Parameters**: ~4.7M parameters
+- **Model Parameters**: ~4.9M parameters
 - **Training Time**: ~4 hours on a single GPU
 
 ### Performance by Class
@@ -78,7 +78,7 @@ EnhancedEfficientResNet(
 )
 ```
 
-Total Parameters: 4,735,042
+Total Parameters: 4,913,705
 
 ## Setup and Installation
 
