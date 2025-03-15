@@ -1,0 +1,58 @@
+# Default configuration for CIFAR-10 image classification
+
+# Device configuration
+device: 'auto'  # 'auto', 'cuda', 'mps', or 'cpu'
+
+# Data configuration
+data:
+  dataset: 'cifar10'
+  num_workers: 4
+  pin_memory: true
+  val_split: 0.1  # Percentage of training data to use as validation
+
+# Model configuration
+model:
+  architecture: 'enhanced_efficient_resnet'
+  base_width: 31
+  num_classes: 10
+  param_limit: 5000000  # Maximum number of parameters allowed
+
+# Training configuration
+training:
+  batch_size: 128
+  num_epochs: 500
+  learning_rate: 0.1
+  weight_decay: 0.0005
+  momentum: 0.9
+  nesterov: true
+  label_smoothing: 0.1
+  mixup_prob: 0.3
+  cutmix_prob: 0.3
+  mixup_alpha: 1.0
+  cutmix_alpha: 1.0
+  grad_clip: 1.0
+  ema_decay: 0.999
+  use_amp: true  # Use Automatic Mixed Precision
+
+# Scheduler configuration
+scheduler:
+  type: 'cosine'  # 'cosine', 'multistep', 'plateau'
+  warmup_epochs: 5
+  min_lr: 0.00001
+
+# Augmentation configuration
+augmentation:
+  use_autoaugment: false
+  use_randaugment: false
+  use_trivialaugment: false
+  tta_transforms: 8  # Number of test-time augmentation transforms
+
+# Prediction configuration
+prediction:
+  default_method: 'adaptive'  # 'tta', 'class_specialized', 'adaptive', 'ensemble'
+  ensemble_weights: [2.0, 1.0, 1.0]  # Weights for each prediction type in ensemble
+
+# Logging and checkpoints
+logging:
+  save_freq: 10  # Save checkpoint every N epochs
+  plot_history: true
