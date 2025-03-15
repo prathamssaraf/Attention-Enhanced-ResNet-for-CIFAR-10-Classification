@@ -276,17 +276,11 @@ Potential areas for further improvement:
    - Model pruning to reduce parameters
    - TensorRT or ONNX export for deployment
 
-## Citation
+## Contributors
+ - Pratham Saraf. (ps5218@nyu.edu)
+ - Krish Murjani. (km6520@nyu.edu)
+ - Krapa Karthik. (kk5754@nyu.edu)
 
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{cifar10-attention-classification,
-  author = {Pratham Saraf, Krish Murjani and Krapa Karthik},
-  title = {Enhanced CIFAR-10 Image Classification with Attention Mechanisms},
-  year = {2025}
-}
-```
 
 ## License
 
